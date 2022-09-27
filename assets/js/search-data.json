@@ -4,9 +4,9 @@
         "post0": {
             "title": "Fibonacci",
             "content": "class Parentfib { public void print(int count){ int[] fibNumbers = getfib(count); for(int i =0; i&lt;fibNumbers.length; i++){ System.out.print(fibNumbers[i]); } } abstract int[] getfib(int count); } . Recursion Loop . class Recurfib extends Parentfib{ public int[] getfib(int count){ num1 } public static void main(String args[]){ int count=20; System.out.print(n1+&quot; &quot;+n2);//printing 0 and 1 printFibonacci(count-2);//n-2 because 2 numbers are already printed } } . For Loop . class greatlearning{ public static void main(String[] args) { int n =17 ,firstTerm = 0, secondTerm = 1; System.out.println(&quot;Fibonacci Series till &quot; + n + &quot; terms:&quot;); for (int i = 1; i &lt;= n; ++i) { System.out.print(firstTerm + &quot;, &quot;); // compute the next term int nextTerm = firstTerm + secondTerm; firstTerm = secondTerm; secondTerm = nextTerm; } } } . While Loop . class Greatlearning { // Function to print N Fibonacci Number static void Fibonacci(int N) { int num1 = 0, num2 = 1; int counter = 0; // Iterate till counter is N while (counter &lt; N) { // Print the number System.out.print(num1 + &quot; &quot;); // Swap int num3 = num2 + num1; num1 = num2; num2 = num3; counter = counter + 1; } } // Driver Code public static void main(String args[]) { // Given Number N int N = 18; // Function Call Fibonacci(N); } } .",
-            "url": "https://jaymanjrekar.github.io/jaysfastpages/2022/09/25/09-26-fibonacci.html",
-            "relUrl": "/2022/09/25/09-26-fibonacci.html",
-            "date": " • Sep 25, 2022"
+            "url": "https://jaymanjrekar.github.io/jaysfastpages/2022/09/26/09-26-fibonacci.html",
+            "relUrl": "/2022/09/26/09-26-fibonacci.html",
+            "date": " • Sep 26, 2022"
         }
         
     
@@ -95,9 +95,6 @@
   
 
   
-  
-
-  
 
   
   
@@ -108,13 +105,18 @@
   
 
   
+
+  
+  
+
+  
   
 
   
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://jaymanjrekar.github.io/jaysfastpages/robots.txt",
