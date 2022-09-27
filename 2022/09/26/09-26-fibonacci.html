@@ -132,11 +132,11 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Parentfib</span> <span class="p">{</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Parentfib</span> <span class="p">{</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">(</span><span class="kt">int</span> <span class="n">count</span><span class="p">){</span>
         <span class="kt">int</span><span class="o">[]</span> <span class="n">fibNumbers</span> <span class="o">=</span> <span class="n">getfib</span><span class="p">(</span><span class="n">count</span><span class="p">);</span>
         <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">fibNumbers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">fibNumbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">fibNumbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
         <span class="p">}</span>
     <span class="p">}</span>
     <span class="kd">abstract</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">getfib</span><span class="p">(</span><span class="kt">int</span> <span class="n">count</span><span class="p">);</span>
@@ -166,7 +166,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Recurfib</span> <span class="kd">extends</span> <span class="n">Parentfib</span><span class="p">{</span>
     
   <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">getfib</span><span class="p">(</span><span class="kt">int</span> <span class="n">count</span><span class="p">){</span>
-    <span class="n">num1</span>
+    
   <span class="p">}</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]</span><span class="p">){</span>  
      <span class="kt">int</span> <span class="n">count</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span>  
@@ -196,25 +196,56 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">greatlearning</span><span class="p">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">forFib</span> <span class="kd">extends</span> <span class="n">Parentfib</span><span class="p">{</span>
   
-      <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span><span class="mi">17</span> <span class="p">,</span><span class="n">firstTerm</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">secondTerm</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Fibonacci Series till &quot;</span> <span class="o">+</span> <span class="n">n</span> <span class="o">+</span> <span class="s">&quot; terms:&quot;</span><span class="p">);</span>
+  <span class="kt">int</span><span class="o">[]</span> <span class="nf">getfib</span><span class="p">(</span><span class="kt">int</span> <span class="n">count</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span><span class="o">[]</span> <span class="n">fibonacciNumbers</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span><span class="p">;</span>
+       <span class="kt">int</span> <span class="n">firstTerm</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">secondTerm</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
   
-      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">firstTerm</span> <span class="o">+</span> <span class="s">&quot;, &quot;</span><span class="p">);</span>
-  
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">count</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// compute the next term</span>
         <span class="kt">int</span> <span class="n">nextTerm</span> <span class="o">=</span> <span class="n">firstTerm</span> <span class="o">+</span> <span class="n">secondTerm</span><span class="p">;</span>
         <span class="n">firstTerm</span> <span class="o">=</span> <span class="n">secondTerm</span><span class="p">;</span>
         <span class="n">secondTerm</span> <span class="o">=</span> <span class="n">nextTerm</span><span class="p">;</span>
+        <span class="n">fibonacciNumbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">firstTerm</span><span class="p">;</span>
       <span class="p">}</span>
+      <span class="k">return</span> <span class="n">fibonacciNumbers</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(){</span>
+      <span class="n">forFib</span> <span class="n">fibo</span> <span class="o">=</span> <span class="k">new</span> <span class="n">forFib</span><span class="p">();</span>
+      <span class="n">fibo</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
+
+  <span class="n">forFib</span><span class="p">.</span><span class="na">main</span><span class="p">();</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
