@@ -182,6 +182,23 @@ window.onload = wrap_img;
         <span class="n">dataInputs</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">data</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
+
+<span class="n">data</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">,</span> <span class="n">dataInputs</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">idata</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span>
+
+
+<span class="n">newDataSet</span><span class="p">.</span><span class="na">addSeries</span><span class="p">(</span><span class="n">series2</span><span class="p">);</span>
+
+
+<span class="n">JFreeChart</span> <span class="n">chart</span> <span class="o">=</span> <span class="n">ChartFactory</span><span class="p">.</span><span class="na">createScatterPlot</span><span class="p">(</span>  
+    <span class="s">&quot;Boys VS Girls weight comparison chart&quot;</span><span class="p">,</span>   
+    <span class="s">&quot;X-Axis&quot;</span><span class="p">,</span> <span class="s">&quot;Y-Axis&quot;</span><span class="p">,</span> <span class="n">newDataSet</span><span class="p">,</span> <span class="n">PlotOrientation</span><span class="p">.</span><span class="na">VERTICAL</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>  
+
+    <span class="k">try</span> <span class="p">{</span>
+        <span class="n">File</span> <span class="n">outputFile</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="s">&quot;dotplot.png&quot;</span><span class="p">);</span>
+        <span class="n">ChartUtilities</span><span class="p">.</span><span class="na">saveChartAsPNG</span><span class="p">(</span><span class="n">outputFile</span><span class="p">,</span> <span class="n">chart</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
+      <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Error saving the chart&quot;</span><span class="p">);</span>
+      <span class="p">}</span>
 </pre></div>
 
     </div>
