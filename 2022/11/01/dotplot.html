@@ -173,6 +173,15 @@ window.onload = wrap_img;
 <span class="n">XYSeries</span> <span class="n">series2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">XYSeries</span><span class="p">(</span><span class="s">&quot;Girls&quot;</span><span class="p">);</span>  
 
 <span class="c1">//add keys and values</span>
+
+<span class="n">Map</span> <span class="o">&lt;</span><span class="n">Integer</span><span class="p">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">dataInputs</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">data</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">dataInputs</span><span class="p">.</span><span class="na">containsKey</span><span class="p">(</span><span class="n">dataInputs</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)){</span>
+        <span class="n">dataInputs</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">data</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">,</span> <span class="n">dataInputs</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">data</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">dataInputs</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">data</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
     </div>
