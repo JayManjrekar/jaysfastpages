@@ -57,7 +57,7 @@
   
     
         ,"post5": {
-            "title": "Title",
+            "title": "Unit 4",
             "content": "// import required classes and package, if any import java.util.Scanner; // create class CaesarCipherExample for encryption and decryption public class CaesarCipherExample { // ALPHABET string denotes alphabet from a-z public static final String ALPHABET = &quot;abcdefghijklmnopqrstuvwxyz&quot;; // create encryptData() method for encrypting user input string with given shift key public static String encryptData(String inputStr, int shiftKey) { // convert inputStr into lower case inputStr = inputStr.toLowerCase(); // encryptStr to store encrypted data String encryptStr = &quot;&quot;; } } CaesarCipherExample.main(null) . Still working on this IT IS CHALLENGING! .",
             "url": "https://jaymanjrekar.github.io/jaysfastpages/2022/11/08/Unit-4-FRQ.html",
             "relUrl": "/2022/11/08/Unit-4-FRQ.html",
