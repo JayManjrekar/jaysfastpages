@@ -6,47 +6,51 @@ search_exclude: true
 ---
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Quiz Application</title>
+	<title>Quiz Application</title>
 </head>
+
 <body>
-Q1. The runs scored by a batsman in 5 ODIs are 31,97,112, 63, and 12. The standard deviation is?<br>
-<input type="radio" name="question1" id="correct1">25.79 <br>
-<input type="radio" name="question1">24.79 <br>
-<input type="radio" name="question1">32 <br>
-<input type="radio" name="question1">12.5<br>
+	Q1. The runs scored by a batsman in 5 ODIs are 31,97,112, 63, and 12. The standard deviation is?<br>
+	<input type="radio" name="question1" id="correct1">25.79 <br>
+	<input type="radio" name="question1">24.79 <br>
+	<input type="radio" name="question1">32 <br>
+	<input type="radio" name="question1">12.5<br>
 
-Q1. Find the mode of the call received on 7 consecutive day 11,13,13,17,19,23,25<br>
-<input type="radio" name="question2" >2 <br>
-<input type="radio" name="question2">8 <br>
-<input type="radio" name="question2" id="correct2">13 <br>
-<input type="radio" name="question2">9 <br>
+	Q1. Find the mode of the call received on 7 consecutive day 11,13,13,17,19,23,25<br>
+	<input type="radio" name="question2">2 <br>
+	<input type="radio" name="question2">8 <br>
+	<input type="radio" name="question2" id="correct2">13 <br>
+	<input type="radio" name="question2">9 <br>
 
-Q1. Find the mode and median of the 9 consecutive number 12,7,8,14,21,23,27,7,11<br>
-<input type="radio" name="question3" >15,2 <br>
-<input type="radio" name="question3"id="correct3">7,12 <br>
-<input type="radio" name="question3">10,3 <br>
-<input type="radio" name="question3">1,9 <br>
+	Q1. Find the mode and median of the 9 consecutive number 12,7,8,14,21,23,27,7,11<br>
+	<input type="radio" name="question3">15,2 <br>
+	<input type="radio" name="question3" id="correct3">7,12 <br>
+	<input type="radio" name="question3">10,3 <br>
+	<input type="radio" name="question3">1,9 <br>
 
-<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
-<script type="text/javascript">
-function result()
-{
-	var score=0;
-	if(document.getElementById('correct1').checked)
-		{	score++;
+	<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+	<script type="text/javascript">
+		function result() {
+			var score = 0;
+			if (document.getElementById('correct1').checked) {
+				score++;
+			}
+			if (document.getElementById('correct2').checked) {
+				score++;
+			}
+			if (document.getElementById('correct3').checked) {
+				score++;
+			}
+			alert("Your score is:" + score);
+			// to print on browser
+			// document.write("Your score is:"+score);
 		}
-	if(document.getElementById('correct2').checked)
-		{	score++;
-		}
-	if(document.getElementById('correct3').checked)
-		{	score++;
-		}
- alert("Your score is:"+score);
- // to print on browser
- // document.write("Your score is:"+score);
-}
-</script>
+
+
+	</script>
 
 </body>
+
 </html>

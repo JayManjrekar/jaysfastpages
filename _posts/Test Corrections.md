@@ -7,7 +7,7 @@ title: Test Corrections MC 2014
 comments: true
 ---
 
-
+## Score: 56/66
 
 Question 7
 
@@ -64,6 +64,18 @@ Correct Answer: B is the answer because choice 2 uses the two parameters to crea
 
 
 Question 37
+
+￼<img width="623" alt="image" src="https://user-images.githubusercontent.com/89176673/200917034-b363c701-49e8-4e84-afb0-745a6766d107.png">
+
+
+Why Wrong Answer: This is incorrect because the while loop iterates to less than 7. The output will be 1,3,5. 
+
+
+Correct Answer: The correct answer will be D because the value will iterate to 1,3,5 and the loop will terminate and the output will be 1,3,5
+
+
+
+Question 41
 
 ￼<img width="623" alt="image" src="https://user-images.githubusercontent.com/89176673/200917034-b363c701-49e8-4e84-afb0-745a6766d107.png">
 
