@@ -7,7 +7,7 @@ title: Test Corrections MC 2014
 comments: true
 ---
 
-## Score: 56/66
+## Score: 43/52
 
 Question 7
 
