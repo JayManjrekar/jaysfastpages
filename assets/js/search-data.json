@@ -80,7 +80,7 @@
     
         ,"post7": {
             "title": "Title",
-            "content": "class Main{ public int getScore(){ int points = 0; if(levelOne.goalReached()){ points = levelOne.getPoints(); } if(levelTwo.goalReached() &amp;&amp; levelOne.goalReached()){ } points += levelTwo.getPoints(); if(levelThree.goalReached()&amp;&amp; levelOne.goalReached()&amp;&amp; levelTwo.goalReached()) points += levelThree.getPoints() if(isBonus()) points += points * 3; } } .",
+            "content": "public void addMembers(String [] names, int gradYear){ for(int i = 0; names.length; i++){ MemberInfo memberobj = new MemberInfo(names[i],gradYear,true); MemberList.add(memberobj); } } . public ArrayList&lt;MemberInfo&gt; removeMembers(int year) { private ArrayList&lt;MemberInfo&gt; newArryObj; for(int i = 0; i&lt;MemberList.size; i++){ if MemberList[i].getGradYear() &lt;= year{ if MemberList[i].inGoodStanding() == true{ newArryObj.add(MemberList[i]); } MemberList.remove(i); } } return newArryObj; } . Incomplete input: | public ArrayList&lt;MemberInfo&gt; removeMembers(int year) . Question 2 . public boolean addRepair(int m, int b){ for(int i = 0; i&lt;schedule.length; i++){ if schedule[i].getMechanicNum() == m } } .",
             "url": "https://jaymanjrekar.github.io/jaysfastpages/2023/04/26/.html",
             "relUrl": "/2023/04/26/.html",
             "date": " • Apr 26, 2023"
